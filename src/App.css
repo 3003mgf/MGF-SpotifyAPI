@@ -1,0 +1,159 @@
+
+html{
+  box-sizing: border-box;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+
+*,
+*:after,
+*:before{
+  box-sizing: inherit;
+}
+
+.song-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-title{
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1rem 0rem;
+  margin-bottom: 0px;
+}
+
+body{
+  background-color: #191414;
+}
+
+
+.song-artist{
+  padding-bottom: 3rem;
+}
+
+.song-search-title{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+
+
+.song-form{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.song-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.song-form div:first-child{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.song-form div:last-child{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.song-form div:last-child input{
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #1DB954;
+  color: whitesmoke;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.song-form form input[type="text"]{
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.song-form form input[type="text"]:hover{
+  scale: 1.1;
+}
+
+
+.genres{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 1rem;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.genres span{
+  background-color: #f5f5f7;
+  color: #777777;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+}
+
+.genres-followers{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  margin-left: 10%;
+}
+
+.song-artist a{
+  background-color: #18a84a;
+  color: whitesmoke;
+  box-shadow: 0 0 0.5rem whitesmoke;
+  text-decoration: none;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  margin-left: 10%;
+}
+
+.followers-div{
+  background-color: palevioletred;
+  color: whitesmoke;
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.song-lyrics{
+  padding-bottom: 2rem;
+}
+
+.song-lyrics a{
+  text-decoration: none;
+  background-color: palevioletred;
+  color: whitesmoke;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  align-items: center;
+  margin-left: 38%;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-1-2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start; /*Para que no estire los elementos*/
+      gap: 2rem; /*Para que cuando se hagan 2 columnas, las columnas tengan un espacio entre si.*/
+  }
+}
